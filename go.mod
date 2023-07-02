@@ -1,4 +1,4 @@
-module github.com/simon-engledew/sqljson
+module github.com/tjgurwara99/sqljson
 
 go 1.20
 

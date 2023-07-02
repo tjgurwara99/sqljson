@@ -2,7 +2,7 @@ package relationships
 
 import (
 	"github.com/jinzhu/inflection"
-	"github.com/simon-engledew/sqljson/internal/types"
+	"github.com/tjgurwara99/sqljson/internal/types"
 	"strings"
 )
 

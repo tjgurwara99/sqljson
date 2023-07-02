@@ -8,7 +8,7 @@ import (
 	"os"
 	"text/template"
 
-	"github.com/simon-engledew/sqljson/internal/relationships"
+	"github.com/tjgurwara99/sqljson/internal/relationships"
 )
 
 //go:embed templates/*

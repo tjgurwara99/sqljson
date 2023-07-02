@@ -8,8 +8,8 @@ import (
 
 	"github.com/pingcap/parser"
 	"github.com/pingcap/parser/ast"
-	"github.com/simon-engledew/sqljson/internal/relationships"
-	"github.com/simon-engledew/sqljson/internal/types"
+	"github.com/tjgurwara99/sqljson/internal/relationships"
+	"github.com/tjgurwara99/sqljson/internal/types"
 	"golang.org/x/exp/maps"
 
 	_ "github.com/pingcap/parser/test_driver"

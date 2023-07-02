@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:1.2
 
-FROM golang:1.19.1-bullseye AS build
+FROM golang:1.20.5-bullseye AS build
 
 WORKDIR /workspace
 
@@ -11,7 +11,7 @@ RUN --mount=type=cache,target=/go/pkg/mod --mount=type=cache,target=/root/.cache
 
 FROM debian:bullseye-20220822
 
-LABEL org.opencontainers.image.source=https://github.com/simon-engledew/sqljson/
+LABEL org.opencontainers.image.source=https://github.com/tjgurwara99/sqljson/
 
 RUN --mount=type=cache,target=/var/cache/apt --mount=type=cache,target=/var/lib/apt \
     rm /etc/apt/apt.conf.d/docker-clean && apt-get update && apt-get install --yes --no-install-recommends graphviz=2.42.2-5
