@@ -1,0 +1,28 @@
+graph {
+    graph [
+        nodesep=1,
+        ranksep=1,
+        pad="0.2,0.2",
+        margin="0.0",
+        cencentrate=true,
+        splines="true",
+        rankdir=LR
+    ];
+    node [
+        label="\N",
+        fontsize=14,
+        margin="0,0",
+        penwidth=1.0,
+        shape=Mrecord
+    ];
+    edge [
+        dir=both,
+        fontsize=12,
+        arrowsize=0.9,
+        penwidth=1.0,
+        labelangle=32,
+        labeldistance=1.8
+    ];
+    {{template "tables.tmpl" .}}
+    {{template "relationships.tmpl" .}}
+}
