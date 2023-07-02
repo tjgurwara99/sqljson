@@ -14,7 +14,6 @@ import (
 
 	_ "github.com/pingcap/parser/test_driver"
 
-	"io/ioutil"
 	"os"
 
 	pg_query "github.com/pganalyze/pg_query_go/v4"
@@ -24,7 +23,7 @@ import (
 func Transform(r io.Reader, w io.Writer) error {
 	p := parser.New()
 
-	dump, err := ioutil.ReadAll(r)
+	dump, err := io.ReadAll(r)
 	if err != nil {
 		return err
 	}
